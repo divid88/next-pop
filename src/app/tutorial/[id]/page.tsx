@@ -29,7 +29,7 @@ export default function Turorial() {
 
         </div>
         {/* describe tutorial */}
-        <div className=' col-span-12 h-[550px] overflow-scroll border 
+        <div className=' col-span-12 md:m-4 h-[550px] overflow-scroll border 
                           rounded-lg '>
             
           <DescribLesson/>

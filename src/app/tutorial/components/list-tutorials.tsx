@@ -36,12 +36,12 @@ export function ListTutorial({subjects}: Props)  {
           <SheetDescription className=' overflow-scroll' >
           <ul className=" h-screen overflow-scroll" >
 
-{subjects.map((item) => (
- <Link href={`/tutorial/${item.id}`} > 
-    <li className='p-2 border hover:bg-primary hover:text-background 
-    transition-all text-center ' key={item.id}>{item.title}</li>
- </Link>
-))}
+            {subjects.map((item) => (
+              <Link href={`/tutorial/${item.id}`} > 
+                <li className='p-2 border hover:bg-primary hover:text-background 
+                transition-all text-center ' key={item.id}>{item.title}</li>
+              </Link>
+            ))}
 
 </ul>
           </SheetDescription>

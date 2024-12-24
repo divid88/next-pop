@@ -88,19 +88,23 @@ export default function Navbar() {
                             <SheetTitle><LogoApp/></SheetTitle>
                             <SheetDescription>
                             
-                            </SheetDescription>
-                            </SheetHeader>
+            
                                 
-                                
-                                <div className='text-center text-sx border-b-2 py-2'><Link href='/'> خانه </Link></div>
-                                <div className='text-center border-b-2 py-2'><Link href='/tutorial/1'> آموزش </Link></div>
-                                <div className='text-center border-b-2 py-2'><Link href='/coding/1'> تمرین </Link></div>
-                                <div className='text-center border-b-2 py-2'><Link href='/about'> درباره ما </Link></div>
-                               
-    
+                                <ul>
+                                    <Link href='/'>            <li className='p-2 border-b hover:bg-primary hover:text-background 
+                transition-all text-center '>  خانه      </li></Link>
+                                    <Link href='/tutorial/1'>  <li className='p-2 border-b hover:bg-primary hover:text-background 
+                transition-all text-center '> آموزش      </li> </Link>
+                                    <Link href='/coding/1'>    <li className='p-2 border-b hover:bg-primary hover:text-background 
+                transition-all text-center '> تمرین      </li> </Link>
+                                    <Link href='/about'>       <li className='p-2 border-b hover:bg-primary hover:text-background 
+                transition-all text-center '>درباره ما    </li></Link>                             
+                               </ul>
+                              </SheetDescription>
+                              </SheetHeader>
                                 <SheetFooter>
                         <SheetClose asChild>
-                            <div className='flex items-center 
+                            <div className='flex items-center         
                             justify-center my-3'> 
                             <ModeToggle/>
                             </div>
